@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div id="padre">
+
+        <header>
+            <!--Crear logo-->
+            <img src="img/Logo.gif" alt="" width="189" height="75">
+            <!--Para el menú debemos hacer un input checkbox-->
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                <!--El &#8811 es para el icono de hamburguesa para el menú-->
+                &#8801
+            </label>
+            <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Blog</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="contacto.html">Contacto</a>
+                <label for="check" class="esconder-menu">
+                    <!--El &#8811 es para el icono de hamburguesa para el menú-->
+                    &#215
+                </label>
+            </nav>
+        </header>
+
+        <div class="slideshow"> <!-- Bloque de anuncios-->
+            <div class="slideshow-item">
+                <img src="https://i.postimg.cc/hPc5MLrD/caption1.jpg" alt="imagen del parque">
+                <div class="slideshow-item-text">
+                    <h5>Vivirás momentos inolvidables, sonrisas y emoción. </h5>
+                    <p>Venga a descubrir nuevas posibilidades en un parque donde los sueños se hacen realidad. Regálese
+                        un día lleno de energía, diversión y posibilidades ilimitadas.</p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="https://i.postimg.cc/wjBbY9Zn/caption2.jpg" alt="imagen de una familia en un parque">
+                <div class="slideshow-item-text">
+                    <h5>Invite a su familia a pasar un día inolvidable en el parque de atracciones. </h5>
+                    <p>Relájese, juegue y cree recuerdos vivos con nosotros. Pasad tiempo juntos disfrutando de la
+                        diversión y la adrenalina.</p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="https://i.postimg.cc/15BYd8Cp/caption3.jpg" alt="imagen de niños en la atracción">
+                <div class="slideshow-item-text">
+                    <h5>Entrada gratuita para para los niños</h5>
+                    <p>menores de 12 años durante todo el junio 2023</p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="https://i.postimg.cc/mD7myk11/caption4.jpg" alt="imagen de zona aqua">
+                <div class="slideshow-item-text">
+                    <h5>Inauguración de la temporada 2023 en la zona aqua.</h5>
+                    <p>Sumérgete en el mundo de la aventura acuática y crea momentos inolvidables con nosotros.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="title"> <!-- linea y texto arriva -->
+            <span>
+                ¡Te invitamos a una aventura inolvidable en nuestro parque de diversiones!<br>
+                Aquí encontrarás una gran cantidad de atracciones y entretenimiento para todas las edades: toboganes de
+                adrenalina, áreas de juego, espectáculos y mucho más.
+            </span>
+        </div>
+
+        <div>
+            <div class="photo-grid"> <!-- Bloque de 8 fotos del parque-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/carousel1.png" alt="Photo carousel1">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <h2><br>The Kingdom of Fantasy</h2>
+                            <p><br>El carrusel es el paseo perfecto para aquellos que buscan aventura y diversión.
+                                Su rotación crea una sensación de velocidad y adrenalina, mientras que los colores
+                                vibrantes y los efectos musicales hacen que toda la experiencia sea aún más emocionante.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/toboganes.png" alt="Photo toboganes">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2><br>Aqua World</h2>
+                            <p><br>A primera vista, un descenso anodino termina con una caída en un ángulo agudo.
+                                <br> Las impresiones inolvidables están garantizadas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/niños.png" alt="Photo niños">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2><br>La ciudad de los niños</br></h2>
+                            <p><br>¡Bienvenidos a la zona infantil de Fantastic World! Aquí los más pequeños podrán
+                                disfrutar de un sinfín de atracciones.
+                                Los padres pueden estar seguros de que sus hijos estarán en un ambiente seguro y
+                                controlado,
+                                con personal capacitado y amable en cada atracción.
+                                ¡Los esperamos!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/achterbahnen.png" alt="Photo achterbahnen">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2><br>Rolling Train</h2>
+                            <p><br>Una montaña rusa emocionante y superrápida, con rotaciones oblicuas en espiral que
+                                parecen palitos de pan retorcidos y dos secciones completas de 360 grados en bucle.
+                                <br>¡Disfrute de un estimulante viaje de rock 'n roll!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-grid">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/desfile carrozas.jpg" alt="Photo desfile carrozas">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2><br>Shows</h2>
+                            <p><br>Podrás ver a nuestros personajes favoritos, desde princesas hasta superhéroes,
+                                desfilando
+                                por las calles en carritos decorados con globos y cintas.
+                                <br><br>Disfruta de música en vivo y bailes coreografiados. ¡Este es un desfile que no
+                                querrá perderse!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/noria.jpg" alt="Photo noria 6">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2><br>El mirador del cielo</h2>
+                            <p><br>¡Bienvenidos al emocionante mundo de la noria en nuestro parque de atracciones!
+                                Nuestra noria cuenta con cabinas espaciosas y seguras, perfectas para toda la familia.
+                                Desde lo alto, podrán ver el parque de atracciones, la ciudad y los alrededores en todo
+                                su
+                                esplendor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/kandinsky-download-1683105862691.png" alt="Photo Castillo 7">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2><br>Enchanted</h2>
+                            <p><br>¡Bienvenidos al majestuoso castillo en nuestro parque de atracciones! Adéntrate en un
+                                mundo
+                                de fantasía y maravillas, mientras exploras los pasillos de este impresionante castillo.
+                                En cada sala, podrán encontrar sorpresas que les transportarán a un
+                                mundo de fantasía y aventura.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/cerditoamedias.png" alt="Photo Porky">
+                        </div>
+                        <div class="flip-card-back" class="porky">
+                            <h2><br>Porky</h2>
+                            <br>
+                            <p>Porky es un cerdito muy amigable y cariñoso que adora jugar y hacer reír a todos los
+                                visitantes del parque. Él está siempre listo para recibir a los más pequeños y llevarlos
+                                a
+                                un mundo de aventuras y diversión en nuestro parque temático. ¡No pierdas la oportunidad
+                                de
+                                conocer a Porky en el Parque de Atracciones!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title"> <!-- linea y texto bajo -->
+            <span>
+                No pierda la oportunidad de pasar tiempo con su familia y amigos, olvídese de las preocupaciones
+                cotidianas y regálese una emoción y una experiencia.
+                <br>Comprar entradas es una forma fácil de garantizarse un día brillante lleno de diversión y alegría.
+            </span>
+        </div>
+
+
+        <!-- blocke de ticketes -->
+        <div class="container__cards">
+            <div class="card">
+                <div class="cover">
+                    <img src="Fotos tickets/otra prueba.png" alt="Adultos">
+                    <div class="img__back"></div>
+                </div>
+
+                <div class="description">
+                    <h2>Adultos</h2>
+                    <p>¿Buscas una aventura emocionante? ¡Tenemos atracciones para todos los gustos en nuestro
+                        parque temático! Consigue tus entradas ahora.</p>
+                    <input type="button" value="Desde 22€">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="cover">
+                    <img src="Fotos tickets/familia1.png" alt="Familia">
+                    <div class="img__back"></div>
+                </div>
+
+                <div class="description">
+                    <h2>Familia</h2>
+                    <p>¿Buscas una aventura emocionante? ¡Tenemos atracciones para todos los gustos en nuestro
+                        parque temático! Consigue tus entradas ahora.</p>
+                    <input type="button" value="Desde 30€">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="cover">
+                    <img src="Fotos tickets/posible foto.png" alt="Gran Grupo">
+                    <div class="img__back"></div>
+                </div>
+
+                <div class="description">
+                    <h2>Gran Grupo</h2>
+                    <p>¿Buscas una aventura emocionante? ¡Tenemos atracciones para todos los gustos en nuestro
+                        parque temático! Consigue tus entradas ahora.</p>
+                    <input type="button" value="Desde 40€">
+                </div>
+            </div>
+        </div>
+
+        <!-- bloque de informacion -->
+        <div id="info">
+
+            <div class="columnitas">
+                <h1 class="cabecera1">Servicios</h1>
+                <br>
+                <h2>Cafetería</h2>
+                <br>
+                <p>10:00 a 20:30</p>
+                <br>
+                <h2>Restaurante</h2>
+                <br>
+                <p>13:00 a 16:00</p>
+                <br>
+                <h2>Alquiler medio de desplazamiento</h2>
+                <br>
+                <p> Fantastic-car: 4,50€</p>
+                <br>
+                <p>Fantastic-car junior (de 1 a 6 años): 3,50€</p>
+                <br>
+                <h2>Merchandising</h2>
+                <br>
+                <p>Apertura según horarios</p>
+            </div>
+
+            <div class="columnitas">
+                <h1 class="cabecera2">
+                    Horarios</h1>
+                <h2 class="h2cabecera2">Apertura del recinto</h2>
+                <br>
+                <p>Primavera/Verano: de 09:00 a 22:30</p>
+                <p>Otoño/Invierno: de 10:00 a 21:00</p>
+                <h2 class="h2cabecera2">Desfiles</h2>
+                <br>
+                <p>Primavera/Verano: de 20:00 a 21:00</p>
+                <p>Otoño/Invierno: de 19:30 a 20:30</p>
+                <div>
+                    <img class="mascota" src="img/cerditoamedias.png">
+                </div>
+            </div>
+
+            <div class="columnitas">
+                <h1 class="cabecera3">Tren Turístico</h1>
+                <p style="margin-top: 120px;">
+                    Reserva anticipada a grupos de más de 8 personas</p>
+                <br>
+                <p style="margin-top: 20px;">
+                    Consigue tu reserva en el apartado de "Tickets"</p>
+                <br>
+                <p style="margin-top: 20px;">
+                    Precio no incluido en la entrada</p>
+            </div>
+        </div>
+
+        <div id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12417.05867024538!2d-6.3473657988891565!3d38.91792771571887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1426c0c5c4594b%3A0xd4df3ca81bba926d!2sBiblioteca%20P%C3%BAblica%20Municipal%20Juan%20Pablo%20Forner!5e0!3m2!1ses!2ses!4v1683624171843!5m2!1ses!2ses"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div id="footer">
+
+            <div class="letrasFooter">
+                <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
+            </div>
+            <div class="colum">
+                <a class="youtube" href="http://youtube.com"></a>
+            </div>
+
+            <div class="colum">
+                <a class="instagram" href="http://instagram.com"></a>
+            </div>
+
+            <div class="colum">
+                <a class="facebook" href="http://facebook.com"></a>
+            </div>
+
+            <div class="letrasFooter">
+                <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+     <header>
+        <!--Crear logo-->
+        <img src="img/Logo.gif" alt="" width="189" height="75">
+        <!--Para el menú debemos hacer un input checkbox-->
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            <!--El &#8811 es para el icono de hamburguesa para el menú-->
+            &#8801
+        </label>
+        <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Blog</a>
+            <a href="tickets.html">tickets</a>
+            <a href="contacto.html">Contactos</a>
+            <label for="check" class="esconder-menu">
+                <!--El &#8811 es para el icono de hamburguesa para el menú-->
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Elije de qué forma quieres divertirte</h2>
+            <div>
+                <img src="img/cerditoamedias.png" alt="">
+            </div>
+        </div>
+        <form id="form" autocomplete="off">
+            <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
+            <input type="emal" name="email" placeholder="Tu Email" class="campo">
+
+            <select id="ticket" name="grupo" style="width: 100%; height: 9%;" onchange="ShowSelected();">
+                <option selected>Escoje Ticket</option>
+                <option value="1">Adulto</option>
+                <option value="2">Familia</option>
+                <option value="3">Grupo</option>
+            </select>
+
+            <div style="padding: 10px;">
+            </div>
+            <input type="text" name="telefono" placeholder="Tu Telefono" class="campo">
+            <input type="submit" class="btn-enviar" id="button" value="¡LO QUIERO   !">
+        </form>
+    </div>
+
+    <div id="footer">
+
+        <div class="letrasFooter">
+            <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
+        </div>
+        <div class="colum">
+            <a class="youtube" href="http://youtube.com"></a>
+        </div>
+
+        <div class="colum">
+            <a class="instagram" href="http://instagram.com"></a>
+        </div>
+
+        <div class="colum">
+            <a class="facebook" href="http://facebook.com"></a>
+        </div>
+
+        <div class="letrasFooter">
+            <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
+        </div>
+
+    </div>
+</body>
+</html>
