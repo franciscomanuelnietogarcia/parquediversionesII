@@ -9,55 +9,75 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-     <header>
-        <!--Crear logo-->
+    <header>
         <img src="img/Logo.gif" alt="" width="189" height="75">
-        <!--Para el menú debemos hacer un input checkbox-->
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">
-            <!--El &#8811 es para el icono de hamburguesa para el menú-->
             &#8801
         </label>
-        <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
         <nav class="menu">
-            <a href="index.html">Inicio</a>
+            <a href="#">Inicio</a>
             <a href="#">Sobre nosotros</a>
             <a href="#">Blog</a>
-            <a href="tickets.html">tickets</a>
-            <a href="contacto.html">Contactos</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Resgistro</a>
             <label for="check" class="esconder-menu">
-                <!--El &#8811 es para el icono de hamburguesa para el menú-->
                 &#215
             </label>
         </nav>
     </header>
 
-    <div class="container-form">
-        <div class="info-form">
-            <h2>Elije de qué forma quieres divertirte</h2>
-            <div>
-                <img src="img/cerditoamedias.png" alt="">
-            </div>
+
+    
+    <section id="panel">
+        <h1>¡Reserva ya tus entradas!</h1>
+       <form id="form">
+        <div class="flex">
+             <input type="text" id="nombre" placeholder="Nombre">
         </div>
-        <form id="form" autocomplete="off">
-            <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
-            <input type="emal" name="email" placeholder="Tu Email" class="campo">
-
-            <select id="ticket" name="grupo" style="width: 100%; height: 9%;" onchange="ShowSelected();">
-                <option selected>Escoje Ticket</option>
-                <option value="1">Adulto</option>
-                <option value="2">Familia</option>
-                <option value="3">Grupo</option>
+        <div class="flex">
+            <input type="text" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="flex">
+           <select id="tipo-entrada">
+              <option value="Adulto">Adulto</option>
+              <option value="Infantil">Infantil</option>
+              <option value="Gran Grupo">Gran Grupo</option>
+           </select> 
+        </div>
+         <div class="flex">
+            <select id="restaurante">
+              <option value="Restaurante">Restaurante</option>
+              <option value="Sin Restaurante">Sin Restaurante</option>
             </select>
+         </div>
+         <div class="flex">
+            <input type="date" id="fecha" required>
+         </div>
+         
+         <div class="flex">
+            <button type="button" onclick="agregarRegistro()">Agregar</button>
+         </div>
+         
+         
+       </form>
 
-            <div style="padding: 10px;">
-            </div>
-            <input type="text" name="telefono" placeholder="Tu Telefono" class="campo">
-            <input type="submit" class="btn-enviar" id="button" value="¡LO QUIERO   !">
-        </form>
-    </div>
+     <table id="tabla-registros">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo de entrada</th>
+            <th>Restaurante</th>
+            <th>Fecha</th>
+            <th class="eliminar">Acciones</th>
+        </tr>
+     </table> 
+    </section>
+    
+    
 
-    <div id="footer">
+    <footer class="footer">
 
         <div class="letrasFooter">
             <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
@@ -78,6 +98,7 @@
             <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
         </div>
 
-    </div>
+    </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>
