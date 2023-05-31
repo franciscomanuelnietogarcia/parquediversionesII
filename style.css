@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 header {
@@ -85,35 +86,56 @@ header {
     }
 }
 
-
-
-
-
-#panel{
-    background-color: white;
-    height: 530px;
+#panel {
+    background-image: url(img/gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1{
+.conteiner-panel {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.image {
+    position: relative;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    width: 350px;
+    height: 400px;
+}
+
+h1 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.25rem;
+}
+
+.flex-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 100px;
 }
 
 table {
     border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
 }
 
-th, td {
+th,
+td {
     padding: 5px;
 }
 
@@ -121,37 +143,29 @@ th, td {
     text-align: center;
 }
 
-#form{
+#form {
     margin-top: 60px;
     margin-left: 35%;
     width: 30%;
 }
 
-#tabla-registros{
+#tabla-registros {
     margin-top: 40px;
     margin-left: 32%;
-    background-color: rgb(238, 221, 141);
-    
+    background-color: rgb(238, 221, 141)
 }
-
-
-
-
-
 
 .footer {
     width: 100%;
-    height: auto;
+    height: 90px;
     border: none;
     background: #0769a2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
-    
-    line-height: 100px;
-    
-    
+    line-height: 70px;
+    position: fixed;
 }
 
 

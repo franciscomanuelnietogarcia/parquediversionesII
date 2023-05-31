@@ -1,17 +1,3 @@
-const $btnSignIn = document.querySelector('.sign-in-btn'),
-      $btnSignUp = document.querySelector('.sign-up-btn'),
-      $signUp = document.querySelector('sign-up'),
-      $signIn = document.querySelector('.sign-in');
-
-document.addEventListener('click', e => {
-    if (e.target === $btnSignIn || e.target === $btnSignUp) {
-        $signIn.classList.toggle('active');
-        $signUp.classList.toggle('inactive')
-    }
-})   
-
-
-
 function agregarRegistro() {
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
@@ -60,7 +46,7 @@ function editarRegistro(boton) {
     document.getElementById("nombre").value = nombre;
     document.getElementById("apellido").value = apellido;
     document.getElementById("tipo-entrada").value = tipoEntrada;
-    document.getElementById('restaurante').value = tipoRestaurante;
+    document.getElementById('restaurante').value = restaurante;
     document.getElementById('fecha').value = fecha
 
     fila.parentNode.removeChild(fila);

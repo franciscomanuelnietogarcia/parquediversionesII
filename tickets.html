@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tickets</title>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -16,7 +16,7 @@
             &#8801
         </label>
         <nav class="menu">
-            <a href="#">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="#">Sobre nosotros</a>
             <a href="#">Blog</a>
             <a href="tickets.html">Tickets</a>
@@ -28,77 +28,107 @@
         </nav>
     </header>
 
+    <section id="panel">
 
+        <div class="conteiner-panel">
+    
     
     <section id="panel">
-        <h1>¡Reserva ya tus entradas!</h1>
-       <form id="form">
-        <div class="flex">
-             <input type="text" id="nombre" placeholder="Nombre">
-        </div>
-        <div class="flex">
-            <input type="text" id="apellido" placeholder="Apellido">
-        </div>
-        <div class="flex">
-           <select id="tipo-entrada">
-              <option value="Adulto">Adulto</option>
-              <option value="Infantil">Infantil</option>
-              <option value="Gran Grupo">Gran Grupo</option>
-           </select> 
-        </div>
-         <div class="flex">
-            <select id="restaurante">
-              <option value="Restaurante">Restaurante</option>
-              <option value="Sin Restaurante">Sin Restaurante</option>
-            </select>
-         </div>
-         <div class="flex">
-            <input type="date" id="fecha" required>
-         </div>
-         
-         <div class="flex">
-            <button type="button" onclick="agregarRegistro()">Agregar</button>
-         </div>
-         
-         
-       </form>
 
-     <table id="tabla-registros">
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Tipo de entrada</th>
-            <th>Restaurante</th>
-            <th>Fecha</th>
-            <th class="eliminar">Acciones</th>
-        </tr>
-     </table> 
+    <section id="panel">
+            <h1>¡Reserva ya tus entradas!</h1>
+
+            <form id="form">
+
+                <div class="flex">
+                    <input type="text" id="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="flex">
+                    <input type="text" id="apellido" placeholder="Apellido">
+                </div>
+
+                <div class="flex">
+                    <select id="tipo-entrada">
+                        <option id="opcion-adult" value="Adulto">Adulto</option>
+                        <option id="opcion-child" value="Infantil">Infantil</option>
+                        <option id="opcion-group" value="Gran Grupo">Gran Grupo</option>
+                    </select>
+                </div>
+
+                <div class="flex">
+                    <select id="restaurante">
+                        <option value="Restaurante">Restaurante</option>
+                        <option value="Sin Restaurante">Sin Restaurante</option>
+                    </select>
+                </div>
+
+                <div class="flex">
+                    <input type="date" id="fecha" required>
+                </div>
+
+                <div class="flex">
+                    <button type="button" onclick="agregarRegistro()">Agregar</button>
+
+                </div>
+
+                <div class="flex-img">
+                    <img class="image" src="img/cerditoamedias.png" alt="">
+                </div>
+
+            </form>
+
+            <table id="tabla-registros">
+
+                <tr>
+
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Tipo de entrada</th>
+                    <th>Restaurante</th>
+                    <th>Fecha</th>
+                    <th class="eliminar">Acciones</th>
+
+                </tr>
+
+            </table>
+        </div>
+
     </section>
     
     
 
     <footer class="footer">
 
-        <div class="letrasFooter">
-            <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
-        </div>
-        <div class="colum">
-            <a class="youtube" href="http://youtube.com"></a>
+        <div style="display: flex; justify-content: space-around; width: 100%;">
+
+            <div class="letrasFooter">
+                <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
+            </div>
+
+            <div class="colum">
+                <a class="youtube" href="http://youtube.com"></a>
+            </div>
+
+            <div class="colum">
+                <a class="instagram" href="http://instagram.com"></a>
+            </div>
+
+            <div class="colum">
+                <a class="facebook" href="http://facebook.com"></a>
+            </div>
+
+            <div class="letrasFooter">
+                <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
+            </div>
+
         </div>
 
-        <div class="colum">
-            <a class="instagram" href="http://instagram.com"></a>
-        </div>
 
-        <div class="colum">
-            <a class="facebook" href="http://facebook.com"></a>
-        </div>
-
-        <div class="letrasFooter">
-            <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
-        </div>
 
     </footer>
+
     <script src="javascript.js"></script>
+    
 </body>
 </html>
