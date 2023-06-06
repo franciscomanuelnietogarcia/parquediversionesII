@@ -31,6 +31,11 @@ header {
     align-items: center;
 }
 
+.select {
+    background-color: aqua;
+    border-radius: 50%;
+}
+
 .logo {
     text-transform: uppercase;
     font-weight: 200;
