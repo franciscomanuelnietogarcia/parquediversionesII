@@ -57,6 +57,11 @@ header {
     transition: 0.4s;
 }
 
+.select{
+    background-color:  aqua;
+    border-radius: 50%;
+}
+
 .mostrar-menu,
 .esconder-menu {
     font-size: 30px;

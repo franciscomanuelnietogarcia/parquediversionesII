@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets</title>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="tickets.css" type="text/css">
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
             <a href="index.html">Inicio</a>
             <a href="#">Sobre nosotros</a>
             <a href="#">Blog</a>
-            <a href="tickets.html">Tickets</a>
+            <a class="select" href="tickets.html">Tickets</a>
             <a href="contacto.html">Contacto</a>
             <a href="registro.html">Resgistro</a>
             <label for="check" class="esconder-menu">
@@ -29,14 +29,11 @@
     </header>
 
     <section id="panel">
-
-        <div class="conteiner-panel">
-    
-    
-    <section id="panel">
-
-    <section id="panel">
+        <div id="tittle">
+            <br>
             <h1>¡Reserva ya tus entradas!</h1>
+        </div>
+            
 
             <form id="form">
 
@@ -50,6 +47,7 @@
 
                 <div class="flex">
                     <select id="tipo-entrada">
+                        <option id="type" value="">Seleccione tipo de entrada</option>
                         <option id="opcion-adult" value="Adulto">Adulto</option>
                         <option id="opcion-child" value="Infantil">Infantil</option>
                         <option id="opcion-group" value="Gran Grupo">Gran Grupo</option>
@@ -57,10 +55,15 @@
                 </div>
 
                 <div class="flex">
-                    <select id="restaurante">
-                        <option value="Restaurante">Restaurante</option>
-                        <option value="Sin Restaurante">Sin Restaurante</option>
-                    </select>
+                    <label for="cantidad">Cantidad de entradas:</label>
+                    <input type="number" id="cantidad" min="1" required>
+                </div>
+
+                <div class="flex">
+
+                    <label for="restaurante">¿Restaurante?</label>
+                    <input type="checkbox" id="restaurante">
+                    
                 </div>
 
                 <div class="flex">
@@ -68,7 +71,7 @@
                 </div>
 
                 <div class="flex">
-                    <button type="button" onclick="agregarRegistro()">Agregar</button>
+                    <button class="btn-neon" type="button" onclick="agregarRegistro()">Agregar</button>
 
                 </div>
 
@@ -77,58 +80,53 @@
                 </div>
 
             </form>
+            
+            
+                 <table id="tabla-registros">
 
-            <table id="tabla-registros">
+                     <tr>
 
-                <tr>
+                         <th>Nombre</th>
+                         <th>Apellido</th>
+                         <th>Tipo de entrada</th>
+                         <th>Número de entradas</th>
+                         <th>Restaurante</th>
+                         <th>Fecha</th>
+                         <th class="eliminar">Acciones</th>
 
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Tipo de entrada</th>
-                    <th>Restaurante</th>
-                    <th>Fecha</th>
-                    <th class="eliminar">Acciones</th>
+                    </tr>
 
-                </tr>
+                </table>
+            
+           
+        </div>
 
-            </table>
+        <div class="booking">
+            <button class="btn-neon" type="button">Reservar</button>
+        </div>
+
+        <br>
+
+        <div class="add">
+        <h6>*El precio y horario están detallados en la página de 'Inicio', para más información no dude en contactarnos.</h4>
         </div>
 
     </section>
-    
-    
-
-    <footer class="footer">
-
-        <div style="display: flex; justify-content: space-around; width: 100%;">
-
-            <div class="letrasFooter">
-                <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
-            </div>
-
-            <div class="colum">
-                <a class="youtube" href="http://youtube.com"></a>
-            </div>
-
-            <div class="colum">
-                <a class="instagram" href="http://instagram.com"></a>
-            </div>
-
-            <div class="colum">
-                <a class="facebook" href="http://facebook.com"></a>
-            </div>
-
-            <div class="letrasFooter">
-                <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
-            </div>
-
-        </div>
 
 
 
+    <footer id="flex-footer">
+
+        <a class="text-footer" href="#"> ©Create by "Super-Group</a>
+        <a class="youtube" href="#"></a>
+        <a class="instagram" href="#"></a>
+        <a class="facebook" href="#"></a>
+        <a class="text-footer" href="#">Política de privacidad</a>
     </footer>
+    
 
-    <script src="javascript.js"></script>
+
+    <script src="tickets.js"></script>
     
 </body>
 </html>
