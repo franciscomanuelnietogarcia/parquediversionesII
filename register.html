@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!--Crear logo-->
+        <img src="img/Logo.gif" alt="" width="189" height="75">
+        <!--Para el menú debemos hacer un input checkbox-->
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            <!--El &#8811 es para el icono de hamburguesa para el menú-->
+            &#8801
+        </label>
+        <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Blog</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                <!--El &#8811 es para el icono de hamburguesa para el menú-->
+                &#215
+            </label>
+        </nav>
+    </header>
+    <div>
+        <div class="container-register">
+            <h1>Regístrese</h1>
+            <form class="data-register">
+                <div class="form-group">
+                    <label for="Name">Nombre:</label>
+                    <input type="Name" id="Name" class="form-input" placeholder="Ingrese su Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="LastName">Apellidos:</label>
+                    <input type="LastName" id="LastName" class="form-input" placeholder="Ingrese sus Apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-email">Correo Electronico:</label>
+                    <input type="email" id="confirm-email" class="form-input" placeholder="Confirme su correo">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-age">Edad:</label>
+                    <input type="age" id="confirm-age" class="form-input" placeholder="Confirme su edad">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer">
+
+            <div class="letrasFooter">
+                <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
+            </div>
+            <div class="colum">
+                <a class="youtube" href="http://youtube.com"></a>
+            </div>
+
+            <div class="colum">
+                <a class="instagram" href="http://instagram.com"></a>
+            </div>
+
+            <div class="colum">
+                <a class="facebook" href="http://facebook.com"></a>
+            </div>
+
+            <div class="letrasFooter">
+                <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
+            </div>
+
+        </div>
+</body>
+</html>
