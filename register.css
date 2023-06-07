@@ -43,7 +43,7 @@ header {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
-    /*0 px de arriba y de izquierda y derecha de 10 px*/
+
     padding: 0 10px;
     transition: 0.4s;
 }
@@ -56,7 +56,6 @@ header {
     transition: 0.4s;
 }
 
-/* Otras de las opciones que nos da el flex box es que podemos poner un orden */
 .mostrar-menu {
     order: 1;
 }
