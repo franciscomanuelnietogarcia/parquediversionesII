@@ -18,8 +18,17 @@ https://trello.com/b/F4Xi5hOJ/parque-de-atracciones-ii
 <br>
 Visual Code, Figma, Trello, Git Hub, HTML, CSS, Java Script, Slack y Zoom.
 
-ScreenShoot
+**ScreenShoot**
+<br>
+El usuario deberá registrarse en la pestaña "registro", para acceder a la reserva de forma personalizada:
+<br>
+![registro](https://github.com/franciscomanuelnietogarcia/parquediversionesII/assets/132559559/495e1566-34d4-4fb6-9e2a-4f5a7f4f8239)
 
+<br>
+El usuario entrará en "tickets" para reservar el tipo de entrada, la fecha y si requiere del servicio restaurante:
+<br>
+![tickets](https://github.com/franciscomanuelnietogarcia/parquediversionesII/assets/132559559/63094637-38d6-488b-ab43-f33e02d4f46a)
+<br>
 
 **Next Steps**
 <br>
