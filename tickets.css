@@ -116,7 +116,21 @@ header {
     text-align: center;
     margin-top: 0px;
     font-size: 1.5rem;
+    animation: tittle 1s infinite;
 }
+
+@keyframes tittle {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: orangered
+    }
+    100% {
+        color:rgb(217, 184, 15)
+    }
+}
+
 
 .flex {
     display: flex;

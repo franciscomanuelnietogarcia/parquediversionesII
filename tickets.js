@@ -47,6 +47,12 @@ function agregarRegistro() {
 
 function eliminarRegistro(boton) {
     var fila = boton.parentNode.parentNode;
+    
+    document.getElementById("tipo-entrada").value = "";
+    document.getElementById("cantidad").value = "";
+    document.getElementById("restaurante").value = "";
+    document.getElementById("fecha").value = "";
+    
     fila.parentNode.removeChild(fila);
 }
 
