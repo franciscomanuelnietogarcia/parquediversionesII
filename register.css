@@ -21,11 +21,9 @@ body {
 /* Header */
 header {
     height: 50x;
-    /* background: #AED6F1; */
     background: #0769a2;
     padding: 0 50px;
     color: black;
-    /*Aplicamos el display flex*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +33,6 @@ header {
     text-transform: uppercase;
     font-weight: 200;
 }
-
 .menu a {
     color: black;
     text-transform: uppercase;
@@ -71,7 +68,7 @@ header {
 .container-register {
     display: flex;
     flex-direction: column;
-    background-image: url(img/Degradado-II.jpg);
+    background-image: url(img/gradient.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,38 +104,24 @@ header {
 .form-input {
     width: 300px;
 }
-
-#footer {
-    width: 100%;
-    height: auto;
-    border: none;
-    background: #0769a2;
-
+#flex-footer{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    flex-flow: wrap;
+    background-color: #045788;
 }
 
-
-.columnas {
-    width: 25%;
-    height: 600px;
-    border: none;
-    float: left;
+.text-footer{
+    color: black;
+    margin-top: 10px;
 }
-
-
 .youtube {
-    width: 70px;
+    width: 50px;
     height: 50px;
     margin-top: 13px;
-    margin-left: 50px;
     background-image: url(https://cdn.pixabay.com/photo/2016/07/03/18/36/youtube-1495277_1280.png);
     background-repeat: no-repeat;
     background-size: contain;
     border: none;
-    float: left;
 }
 
 .instagram {
@@ -155,8 +138,8 @@ header {
 
 
 .facebook {
-    width: 80px;
-    height: 50px;
+    width: 70px;
+    height: 44px;
     margin-top: 10px;
     margin-left: 70px;
     background-image: url(https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_1280.png);
@@ -166,12 +149,21 @@ header {
     float: left;
 }
 
-.footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+@media screen and (max-width: 600px) {
+    .text-footer{
+        font-size: 10px;
+        margin-top: 20px;
+    }
 
-.letrasFooter {
-    margin-top: 30px;
+    .youtube{
+        width: 30px;
+    }
+
+    .instagram{
+        width: 30px;
+    }
+
+    .facebook{
+        width: 30px;
+    }
 }
