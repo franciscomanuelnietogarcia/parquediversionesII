@@ -38,6 +38,7 @@ header {
     text-transform: uppercase;
     font-weight: 200;
 }
+
 .menu a {
     color: black;
     text-transform: uppercase;
@@ -70,6 +71,42 @@ header {
     display: none;
 }
 
+@media(max-width:768px) {
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #AED6F1;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+}
+
 .container-register {
     display: flex;
     flex-direction: column;
@@ -80,7 +117,7 @@ header {
     margin: 2px solid black;
     background-color: aquamarine;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     margin: 0;
     margin-top: 0%;
     text-align: center;
@@ -109,16 +146,18 @@ header {
 .form-input {
     width: 300px;
 }
-#flex-footer{
+
+#flex-footer {
     display: flex;
     justify-content: space-around;
     background-color: #045788;
 }
 
-.text-footer{
+.text-footer {
     color: black;
     margin-top: 10px;
 }
+
 .youtube {
     width: 50px;
     height: 50px;
@@ -155,20 +194,20 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    .text-footer{
+    .text-footer {
         font-size: 10px;
         margin-top: 20px;
     }
 
-    .youtube{
+    .youtube {
         width: 30px;
     }
 
-    .instagram{
+    .instagram {
         width: 30px;
     }
 
-    .facebook{
+    .facebook {
         width: 30px;
     }
 }
