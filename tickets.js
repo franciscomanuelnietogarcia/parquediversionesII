@@ -40,6 +40,10 @@ function agregarRegistro() {
     
             document.getElementById("nombre").value = "";
             document.getElementById("apellido").value = "";
+            document.getElementById("tipo-entrada").value = "";
+            document.getElementById("cantidad").value = "";
+            document.getElementById("restaurante").checked = "";
+            document.getElementById("fecha").value = "";
     }
 
 
@@ -50,7 +54,7 @@ function eliminarRegistro(boton) {
     
     document.getElementById("tipo-entrada").value = "";
     document.getElementById("cantidad").value = "";
-    document.getElementById("restaurante").value = "";
+    document.getElementById("restaurante").checked = "";
     document.getElementById("fecha").value = "";
     
     fila.parentNode.removeChild(fila);
