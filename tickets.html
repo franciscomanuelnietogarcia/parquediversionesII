@@ -12,7 +12,7 @@
     <header>
         <img src="img/Logo.gif" alt="" width="189" height="75">
         <input type="checkbox" id="check">
-        <label for="check" class="mostrar-menu">
+        <label for="check" class="show-menu">
             &#8801
         </label>
         <nav class="menu">
@@ -22,7 +22,7 @@
             <a class="select" href="tickets.html">Tickets</a>
             <a href="contacto.html">Contacto</a>
             <a href="register.html">Resgistro</a>
-            <label for="check" class="esconder-menu">
+            <label for="check" class="hide-menu">
                 &#215
             </label>
         </nav>
@@ -38,15 +38,15 @@
             <form id="form">
 
                 <div class="flex">
-                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="text" id="name" placeholder="Nombre">
                 </div>
 
                 <div class="flex">
-                    <input type="text" id="apellido" placeholder="Apellido">
+                    <input type="text" id="lastName" placeholder="Apellido">
                 </div>
 
                 <div class="flex">
-                    <select id="tipo-entrada">
+                    <select id="inputType">
                         <option id="type" value="">Seleccione tipo de entrada</option>
                         <option id="opcion-adult" value="Adulto">Adulto</option>
                         <option id="opcion-child" value="Infantil">Infantil</option>
@@ -55,23 +55,23 @@
                 </div>
 
                 <div class="flex">
-                    <label for="cantidad">Cantidad de entradas:</label>
-                    <input type="number" id="cantidad" min="1" required>
+                    <label for="amount">Cantidad de entradas:</label>
+                    <input type="number" id="amount" min="1" required>
                 </div>
 
                 <div class="flex">
 
-                    <label for="restaurante">¿Restaurante?</label>
-                    <input type="checkbox" id="restaurante">
+                    <label for="restaurant">¿Restaurante?</label>
+                    <input type="checkbox" id="restaurant">
                     
                 </div>
 
                 <div class="flex">
-                    <input type="date" id="fecha" required>
+                    <input type="date" id="date" required>
                 </div>
 
                 <div class="flex">
-                    <button class="btn-neon" type="button" onclick="agregarRegistro()">Agregar</button>
+                    <button class="btn-neon" type="button" onclick="addRecord()">Agregar</button>
 
                 </div>
 
@@ -82,7 +82,7 @@
             </form>
             
             
-                 <table id="tabla-registros">
+                 <table id="records-table">
 
                      <tr>
 
@@ -92,7 +92,7 @@
                          <th>Número de entradas</th>
                          <th>Restaurante</th>
                          <th>Fecha</th>
-                         <th class="eliminar">Acciones</th>
+                         <th class="remove">Acciones</th>
 
                     </tr>
 
