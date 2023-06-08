@@ -42,6 +42,7 @@ header {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
+
     padding: 0 10px;
     transition: 0.4s;
 }
@@ -54,8 +55,7 @@ header {
     transition: 0.4s;
 }
 
-
-.show-menu {
+.mostrar-menu {
     order: 1;
 }
 
