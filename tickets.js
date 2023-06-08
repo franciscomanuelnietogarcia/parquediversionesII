@@ -1,82 +1,82 @@
-function agregarRegistro() {
-    var nombre = document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellido").value;
-    var tipoEntrada = document.getElementById("tipo-entrada").value;
-    var cantidad = document.getElementById('cantidad').value;
-    var restaurante = document.getElementById('restaurante').checked;
-    var fecha = document.getElementById('fecha').value;
+function addRecord() {
+    let name = document.getElementById("name").value;
+    let lastName = document.getElementById("lastName").value;
+    let inputType = document.getElementById("inputType").value;
+    let amount = document.getElementById('amount').value;
+    let restaurant = document.getElementById('restaurant').checked;
+    let date = document.getElementById('date').value;
 
 
-    if (nombre == "") {
+    if (name == "") {
         alert("Debes ingresar el nombre");
-    } else if (apellido == "") {
+    } else if (lastName == "") {
         alert("Debes ingresar el apellido");
-    } else if(tipoEntrada == ""){
+    } else if(inputType == ""){
         alert("Debes seleccionar tipo de ticket");
-    }else if(cantidad == ""){
+    }else if(amount == ""){
         alert("Debes elegir cuántas entradas")
 
-    }else if(fecha == ""){
+    }else if(date == ""){
         alert("Debes seleccionar una fecha")
     } else {
-        var tabla = document.getElementById("tabla-registros");
+        let table = document.getElementById("records-table");
 
-            var fila = tabla.insertRow();
-            var celdaNombre = fila.insertCell();
-            var celdaApellido = fila.insertCell();
-            var celdaTipoEntrada = fila.insertCell();
-            var celdaCantidad = fila.insertCell();
-            var celdaRestaurante = fila.insertCell();
-            var celdaFecha = fila.insertCell();
-            var celdaAcciones = fila.insertCell();
+            let row = table.insertRow();
+            let cellName = row.insertCell();
+            let cellLastName = row.insertCell();
+            let cellInputType = row.insertCell();
+            let cellAmount = row.insertCell();
+            let cellRestaurant = row.insertCell();
+            let cellDate = row.insertCell();
+            let cellAction = row.insertCell();
     
-            celdaNombre.innerHTML = nombre;
-            celdaApellido.innerHTML = apellido;
-            celdaTipoEntrada.innerHTML = tipoEntrada;
-            celdaCantidad.innerHTML = cantidad;
-            celdaRestaurante.innerHTML = restaurante ? 'Sí' : 'No';
-            celdaFecha.innerHTML = fecha;
-            celdaAcciones.innerHTML = "<button onclick='editarRegistro(this)'>Editar</button> <button onclick='eliminarRegistro(this)'>Eliminar</button>";
+            cellName.innerHTML = name;
+            cellLastName.innerHTML = lastName;
+            cellInputType.innerHTML = inputType;
+            cellAmount.innerHTML = amount;
+            cellRestaurant.innerHTML = restaurant ? 'Sí' : 'No';
+            cellDate.innerHTML = date;
+            cellAction.innerHTML = "<button onclick='editRecord(this)'>Editar</button> <button onclick='removeRecord(this)'>Eliminar</button>";
     
-            document.getElementById("nombre").value = "";
-            document.getElementById("apellido").value = "";
-            document.getElementById("tipo-entrada").value = "";
-            document.getElementById("cantidad").value = "";
-            document.getElementById("restaurante").checked = "";
-            document.getElementById("fecha").value = "";
+            document.getElementById("name").value = "";
+            document.getElementById("lastName").value = "";
+            document.getElementById("inputType").value = "";
+            document.getElementById("amount").value = "";
+            document.getElementById("restaurant").checked = "";
+            document.getElementById("date").value = "";
     }
 
 
 }
 
-function eliminarRegistro(boton) {
-    var fila = boton.parentNode.parentNode;
+function removeRecord(button) {
+    let row = button.parentNode.parentNode;
     
-    document.getElementById("tipo-entrada").value = "";
-    document.getElementById("cantidad").value = "";
-    document.getElementById("restaurante").checked = "";
-    document.getElementById("fecha").value = "";
+    document.getElementById("inputType").value = "";
+    document.getElementById("amount").value = "";
+    document.getElementById("restaurant").checked = "";
+    document.getElementById("date").value = "";
     
-    fila.parentNode.removeChild(fila);
+    row.parentNode.removeChild(row);
 }
 
-function editarRegistro(boton) {
-    var fila = boton.parentNode.parentNode;
-    var celdas = fila.getElementsByTagName("td");
+function editRecord(button) {
+    let row = button.parentNode.parentNode;
+    let cell = row.getElementsByTagName("td");
 
-    var nombre = celdas[0].innerHTML;
-    var apellido = celdas[1].innerHTML;
-    var tipoEntrada = celdas[2].innerHTML;
-    var cantidad = celdas[3].innerHTML;
-    var restaurante = celdas[4].innerHTML;
-    var fecha = celdas[5].innerHTML;
+    let name = cell[0].innerHTML;
+    let lastName = cell[1].innerHTML;
+    let inputType = cell[2].innerHTML;
+    let amount = cell[3].innerHTML;
+    let restaurant = cell[4].innerHTML;
+    let date = cell[5].innerHTML;
 
-    document.getElementById("nombre").value = nombre;
-    document.getElementById("apellido").value = apellido;
-    document.getElementById("tipo-entrada").value = tipoEntrada;
-    document.getElementById("cantidad").value = cantidad;
-    document.getElementById('restaurante').value = restaurante;
-    document.getElementById('fecha').value = fecha
+    document.getElementById("name").value = name;
+    document.getElementById("lastName").value = lastName;
+    document.getElementById("inputType").value = inputType;
+    document.getElementById("amount").value = amount;
+    document.getElementById('restaurant').value = restaurant;
+    document.getElementById('date').value = date
 
-    fila.parentNode.removeChild(fila);
+    row.parentNode.removeChild(row);
 }

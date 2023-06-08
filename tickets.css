@@ -33,21 +33,21 @@ header {
     border-radius: 50%;
 }
 
-.mostrar-menu,
-.esconder-menu {
+.show-menu,
+.hide-menu {
     font-size: 30px;
     cursor: pointer;
     display: none;
     transition: 0.4s;
 }
 
-.mostrar-menu {
+.show-menu {
     order: 1;
 }
 
 .menu a:hover,
-.mostrar-menu a:hover,
-.esconder-menu a:hover {
+.show-menu a:hover,
+.hide-menu a:hover {
     color: #FDFEFE;
 }
 
@@ -57,8 +57,8 @@ header {
 
 @media(max-width:768px) {
 
-    .mostrar-menu,
-    .esconder-menu {
+    .show-menu,
+    .hide-menu {
         display: block;
     }
 
@@ -80,7 +80,7 @@ header {
         padding: 20px;
     }
 
-    .esconder-menu {
+    .hide-menu {
         position: absolute;
         top: 40px;
         right: 40px;
@@ -139,11 +139,11 @@ header {
 }
 
 .flex-img {
+    display: block;
     position: absolute;
     right: 0;
     top: 0;
     margin-top: 100px;
-    display: block;
 }
 
 @media screen and (max-width: 600px) {
@@ -169,7 +169,7 @@ td {
     padding: 5px;
 }
 
-.eliminar {
+.remove {
     text-align: center;
 }
 
@@ -179,7 +179,7 @@ td {
     width: 30%;
 }
 
-#tabla-registros {
+#records-table {
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 380px;
@@ -189,8 +189,8 @@ td {
 
 
 @media (max-width: 600px) {
-    /* Estilos para dispositivos con ancho de pantalla menor o igual a 600px */
-    #tabla-registros{
+    
+    #records-table {
         margin-left: 2px;
         font-size: 0.8em;
         margin-bottom: 10px;
@@ -198,7 +198,7 @@ td {
   }
 
 
-.btn-neon{
+.btn-neon {
     position: relative;
     display: block;
     padding: 10px 10px;

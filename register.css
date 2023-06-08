@@ -4,7 +4,6 @@ body {
     padding: 0;
 }
 
-/* Estilos responsive */
 @media screen and (max-width: 768px) {
     .button {
         display: block;
@@ -18,7 +17,7 @@ body {
     }
 }
 
-/* Header */
+
 header {
     height: 50x;
     background: #0769a2;
@@ -43,27 +42,26 @@ header {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
-    /*0 px de arriba y de izquierda y derecha de 10 px*/
     padding: 0 10px;
     transition: 0.4s;
 }
 
-.mostrar-menu,
-.esconder-menu {
+.show-menu,
+.hide-menu {
     font-size: 30px;
     cursor: pointer;
     display: none;
     transition: 0.4s;
 }
 
-/* Otras de las opciones que nos da el flex box es que podemos poner un orden */
-.mostrar-menu {
+
+.show-menu {
     order: 1;
 }
 
 .menu a:hover,
-.mostrar-menu a:hover,
-.esconder-menu a:hover {
+.show-menu a:hover,
+.hide-menu a:hover {
     color: #FDFEFE;
 }
 
@@ -73,8 +71,8 @@ header {
 
 @media(max-width:768px) {
 
-    .mostrar-menu,
-    .esconder-menu {
+    .show-menu,
+    .hide-menu {
         display: block;
     }
 
@@ -96,7 +94,7 @@ header {
         padding: 20px;
     }
 
-    .esconder-menu {
+    .hide-menu {
         position: absolute;
         top: 40px;
         right: 40px;
